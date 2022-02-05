@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EdvoraAssignment</string>
+    <string name="pencil">Used for free hand drawing</string>
+    <string name="line">Used for drawing arrow in any direction</string>
+    <string name="rectangle">Used to draw a rectangle</string>
+    <string name="circle">used to draw a circle</string>
+    <string name="color">Used to select a color</string>
+</resources>
