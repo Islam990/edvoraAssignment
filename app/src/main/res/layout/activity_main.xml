@@ -24,7 +24,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="@string/pencil"
+            android:background="@color/white"
+            android:contentDescription="@string/pencilCD"
             android:minWidth="36dp"
             android:minHeight="36dp"
             android:src="@drawable/ic_baseline_create_24" />
@@ -35,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="@string/line"
+            android:contentDescription="@string/lineCD"
             android:minWidth="36dp"
             android:minHeight="36dp"
             android:src="@drawable/ic_baseline_call_received_24" />
@@ -46,7 +47,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="@string/rectangle"
+            android:contentDescription="@string/rectangleCD"
             android:minWidth="36dp"
             android:minHeight="36dp"
             android:src="@drawable/ic_baseline_crop_landscape_24" />
@@ -57,7 +58,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="@string/circle"
+            android:contentDescription="@string/circleCD"
             android:minWidth="36dp"
             android:minHeight="36dp"
             android:src="@drawable/ic_baseline_panorama_fish_eye_24" />
@@ -68,12 +69,70 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="@string/color"
+            android:contentDescription="@string/colorCD"
             android:minWidth="36dp"
             android:minHeight="36dp"
             android:src="@drawable/ic_baseline_color_lens_24" />
 
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/colorPallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_navigation">
+
+        <ImageView
+            android:id="@+id/red"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="#f00" />
+
+
+        <ImageView
+            android:id="@+id/green"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="#0f0" />
+
+
+        <ImageView
+            android:id="@+id/blue"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="#00f" />
+
+
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="#000" />
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.eslamgad.edvoraAssignment.DrawView
+        android:id="@+id/drawView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorPallet" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

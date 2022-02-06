@@ -1,4 +1,4 @@
-package com.eslamgad.EdvoraAssignment
+package com.eslamgad.edvoraAssignment
 
 import org.junit.Test
 
