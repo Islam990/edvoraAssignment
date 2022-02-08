@@ -5,4 +5,8 @@
     <string name="rectangleCD">Used to draw a rectangle</string>
     <string name="circleCD">used to draw a circle</string>
     <string name="colorCD">Used to select a color</string>
+    <string name="hand">Hand</string>
+    <string name="line">Line</string>
+    <string name="rect">Rect</string>
+    <string name="circle">Circle</string>
 </resources>

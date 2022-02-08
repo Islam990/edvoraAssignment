@@ -17,18 +17,22 @@ class MainActivity : AppCompatActivity() {
 
         binding.pencil.setOnClickListener {
             selectedBackground(it.id)
+            Common.shape = shapes.hand
         }
 
         binding.line.setOnClickListener {
             selectedBackground(it.id)
+            Common.shape = shapes.line
         }
 
         binding.rectangle.setOnClickListener {
             selectedBackground(it.id)
+            Common.shape = shapes.rect
         }
 
         binding.circle.setOnClickListener {
             selectedBackground(it.id)
+            Common.shape = shapes.circle
         }
 
         binding.color.setOnClickListener {
